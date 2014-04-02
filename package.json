@@ -1,0 +1,34 @@
+{
+  "name": "task-uglifyjs",
+  "version": "0.1.0",
+  "main": "lib/uglifyjs.js",
+  "description": "Minify files with UglifyJS.",
+  "homepage": "https://github.com/taskjs/task-uglifyjs",
+  "bugs": "https://github.com/taskjs/task-uglifyjs/issues",
+  "author": {
+    "name": "Yuanyan Cao",
+    "email": "yuanyan.cao@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taskjs/task-uglifyjs"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "keywords": [
+    "task",
+    "uglifyjs",
+    "minify"
+  ],
+  "dependencies": {
+    "execution": "^0.1.1",
+    "uglify-js": "^2.4.13",
+    "record": "^0.2.0"
+  },
+  "scripts": {
+    "test": "node test/uglifyjs_test"
+  }
+}
