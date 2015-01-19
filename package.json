@@ -1,6 +1,6 @@
 {
   "name": "task-uglifyjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/uglifyjs.js",
   "description": "Minify files with UglifyJS.",
   "homepage": "https://github.com/taskjs/task-uglifyjs",

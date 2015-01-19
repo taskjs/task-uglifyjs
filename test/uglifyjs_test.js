@@ -19,6 +19,17 @@ function errorHandler(err){
     assert.equal(inputs[0].contents.toString(), 'var foo=1,bar=2;')
 }).catch(errorHandler);
 
+(new Uglifyjs).run(
+    [new Record({
+        contents: '"中文";',
+        path: 'test/foo.js'
+    })], // inputs
+    {}, // options
+    console // logger
+).then(function(inputs){
+        assert.equal(inputs[0].contents.toString(), '"\\u4e2d\\u6587";')
+    }).catch(errorHandler);
+
 (new Uglifyjs({
     error: function(err){
         console.log(err.stack)
